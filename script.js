@@ -69,6 +69,7 @@ function createSnowflake() {
 
   snowFlake.classList.add("fas", randomIcon());
   snowFlake.style.color = colorValue;
+  snowFlake.style.transform = `rotate(${windAmount*-0.8}deg)`;
   snowFlake.style.left = randint(0, 100) + "%";
   snowFlake.style.opacity = Math.random();
   snowFlake.style.fontSize = randint(MIN_SIZE, MAX_SIZE) + "px";
@@ -77,7 +78,7 @@ function createSnowflake() {
 
   snowFlake
     .animate(
-      { transform: `translate(${windAmount}vw, 100vh)` },
+      { transform: `translate(${windAmount}vw, 100vh) rotate(${windAmount*-0.8}deg)` },
       { duration: randint(MIN_DURATION, MAX_DURATION) }
     )
     .finished.then(() => snowFlake.remove());
