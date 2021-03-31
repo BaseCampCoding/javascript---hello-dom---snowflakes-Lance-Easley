@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow Flakes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+</body>
+    <div id="controls-container">
+        <div class="control">
+            <label for="snow-vs-rain"><span>Snow</span> <span>Rain</span></label>
+            <input id="snow-vs-rain" type="range" min="0" max="1" step=".1" value=".5" name="snow-vs-rain">
+        </div>
+        <div class="control">
+            <label for="quantity">Quantity</label>
+            <input id="quantity" type="range" min="0" max="4" value="1">
+        </div>
+        <div class="control">
+            <label for="click-color">Click Color</label>
+            <input type="color" id="click-color" value="#A600FF">
+        </div>
+        <div class="control">
+            <label for="wind">Wind</label>
+            <input id="wind" type="range" min="-40" max="40" value="0">
+        </div>
+    </div>
+    <div id="snowflakes-container"></div>
+</html>
